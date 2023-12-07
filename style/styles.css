@@ -1,0 +1,54 @@
+* {
+    background-color: burlywood;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin-top: 2vmin;
+    margin-bottom: 1.5vmin;
+    color: darkgoldenrod;
+}
+
+
+#table {
+    display: grid;
+    grid-template-columns: repeat(3, 25vmin);
+    grid-template-rows: repeat(3, 25vmin);
+    background-color: darkorange;
+}
+#table > div {
+    margin: 2vmin;
+    background-color: burlywood;
+    border: 2vmin solid burlywood;
+}
+#table > div.avail {
+    cursor: pointer;
+}
+#table > div.avail:hover{
+    border-color: lightgoldenrodyellow;
+}
+
+button {
+    margin-top: 10vmin;
+    padding: 2vmin;
+    background-color: darkgoldenrod;
+    color: burlywood;
+    border-radius: 2vmin;
+    font-size: 4vmin;
+}
+button:disabled {
+    background-color:blanchedalmond;
+    color: darkgoldenrod;
+}
+button:hover:not(:disabled) {
+    color:burlywood;
+    background-color: darkgoldenrod;
+}
